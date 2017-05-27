@@ -1,9 +1,8 @@
 {
-  "name": "node-quickfix",
-  "version": "2.0.10",
+  "name": "node-quickfix-wrap",
+  "version": "2.0.11",
+  "gypfile": true,
   "scripts": {
-    "preinstall": "npm install nan && node-gyp clean && node-gyp configure && node-gyp build",
-    "preuninstall": "rm -rf build/*",
     "test": "mocha"
   },
   "main": "index.js",
@@ -24,6 +23,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/electronifie/node-quickfix"
+    "url": "https://github.com/ctubio/node-quickfix-wrap"
   }
 }
