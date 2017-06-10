@@ -49,6 +49,10 @@ void FixApplication::toAdmin( FIX::Message& message, const FIX::SessionID& sessi
     if (strcmp(mCredentials->password.c_str(), "") != 0) {
 		  message.setField(554, mCredentials->password.c_str());
 		}
+
+    if (strcmp(mCredentials->rawdata.c_str(), "") != 0) {
+		  message.setField(96, mCredentials->rawdata.c_str());
+		}
 	}
 
 	FixApplication::dispatchEvent(std::string("toAdmin"), message, sessionID);
