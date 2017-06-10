@@ -12,6 +12,7 @@ typedef struct {
 	std::string username;
 	std::string password;
 	std::string rawdata;
+	std::string sendingtime;
 } fix_credentials;
 
 #endif /* FIXCREDENTIALS_H_ */
