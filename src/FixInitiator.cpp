@@ -169,7 +169,7 @@ NAN_METHOD(FixInitiator::sendRaw) {
 }
 
 void FixInitiator::sendAsync(const Nan::FunctionCallbackInfo<v8::Value>& info, FIX::Message* fixMessage) {
-	FixInitiator* instance = Nan::ObjectWrap::Unwrap<FixInitiator>(info.This());
+	// FixInitiator* instance = Nan::ObjectWrap::Unwrap<FixInitiator>(info.This());
 
 	Nan::Callback *callback = new Nan::Callback(info[1].As<Function>());
 
